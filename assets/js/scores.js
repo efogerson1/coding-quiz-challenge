@@ -28,7 +28,8 @@ storeHighscores();
 
 // Function to clear local storage of scores
 function clearHighScores(){
-        document.getElementById('highscores').innerHTML="";
+        document.getElementById('highscores').innerHTML=""; 
+        localStorage.clear();
     }
 
 clearButton.addEventListener("click" , clearHighScores);
