@@ -73,7 +73,7 @@ function checkAnswer(event) {
     feedbackDiv.textContent = "Wrong!";
     time -= penaltyTime;
 
-    // Ensure time does not go negative
+    // Ensure time does not go negative  //somehow time is still hitting -1?
     if (time < 0) {
       time = 0;
     }

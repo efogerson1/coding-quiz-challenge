@@ -1,4 +1,5 @@
-/* const ol = document.querySelector("#highscores"); */
+var clearButton = document.getElementById("clear");
+
 
 function storeHighscores (){
 
@@ -13,9 +14,6 @@ function storeHighscores (){
         var newLi = document.createElement('li');
         newLi.textContent = highscores[i].initials + " - " + highscores[i].score;
                 //append li elements to the ol element in highscore.html
-                /* document.getElementByID("highscores").appendChild(li.textContent);
-                li.textContent.appendChild("highscores"); */
-
                 var highscoresOl = document.getElementById('highscores');
                         highscoresOl.appendChild(newLi);
                 
@@ -25,3 +23,10 @@ function storeHighscores (){
 }
 
 storeHighscores();
+
+var x = "highscores";
+clearButton.addEventListener("click");
+document.getElementById('x').innerHTML="";
+
+
+// Need to add function to clear highscore values
