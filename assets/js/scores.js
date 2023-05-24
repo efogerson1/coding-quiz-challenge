@@ -24,9 +24,12 @@ function storeHighscores (){
 
 storeHighscores();
 
-var x = "highscores";
-clearButton.addEventListener("click");
-document.getElementById('x').innerHTML="";
 
 
-// Need to add function to clear highscore values
+// Function to clear local storage of scores
+function clearHighScores(){
+        document.getElementById('highscores').innerHTML="";
+    }
+
+clearButton.addEventListener("click" , clearHighScores);
+
