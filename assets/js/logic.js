@@ -28,9 +28,10 @@ function startQuiz() {
     timeSpan.textContent = time;
 
     // Check if time has run out
-    if (time <= 0) {
+     if (time <= 0) {
       endQuiz();
-    }
+        time = 0;
+    } 
   }, 1000);
 
   // Display the first question
@@ -72,10 +73,13 @@ function checkAnswer(event) {
     // Incorrect answer
     feedbackDiv.textContent = "Wrong!";
     time -= penaltyTime;
-
+console.log(time);
     // Ensure time does not go negative  //somehow time is still hitting -1?
-    if (time < 0) {
+    if (time <= 0) {
       time = 0;
+      timeSpan.textContent = time;
+      console.log(time);
+      endQuiz();
     }
   }
 
