@@ -3,13 +3,13 @@ var currentQuestionIndex = 0;
 var time = 0;
 var timerInterval;
 var penaltyTime = 15;
-var initialsInput = document.getElementById("initials");
-var submitButton = document.getElementById("submit-button");
+var initialsInput = document.getElementById("user-initials");
+var submitButton = document.getElementById("sub-button");
 var highscoresList = document.getElementById("highscores");
 var startButton = document.getElementById("start-button");
 var questionTitle = document.getElementById("question-title");
 var choicesContainer = document.getElementById("choices");
-var feedbackDiv = document.getElementById("feedback");
+var feedbackDiv = document.getElementById("info");
 var timeSpan = document.getElementById("time");
 var finalScoreSpan = document.getElementById("final-score");
 
